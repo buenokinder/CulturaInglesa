@@ -1,0 +1,13 @@
+{
+    "files": [
+        "src/app/app.ts"
+    ],
+    "compilerOptions": {
+        // "noImplicitAny": true,
+        "target": "es5",
+        "out": "main.js"
+    },
+    "include": [
+        "src/app/**/*"
+    ]
+}

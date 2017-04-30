@@ -1,0 +1,63 @@
+
+@media (max-width: 980px) {
+    body { 
+        padding-top: 65px; 
+    }
+    .img-circle {
+        border-radius: 50%;
+        width: 48px;
+        border-width: 1px;
+    }
+}
+
+@media (min-width: 980px) {
+    body { 
+        padding-top: 110px; 
+    }
+    .img-circle {
+  border-radius: 50%;
+   border-width: 1px;
+}
+}
+
+
+.ibox-title h5 {
+  margin-top: 5px;
+}
+
+.ibox-title h5 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 0 7px;
+  padding: 0;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+ .gi-5x{font-size: 2em;}
+
+ 
+ .m-t-lg {
+    margin-top: 30px;
+}
+
+.well {
+    padding: 0px!important;
+
+}
+.color-red{
+    color: red;
+    font-weight: bold;
+}
+
+.color-black {
+    color: black;
+    font-weight: bold;
+}
+
+
+

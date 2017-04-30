@@ -1,0 +1,134 @@
+    <style type="text/css">   
+        a:focus {
+            outline: none;
+        }
+        .nav-tabs.nav-justified > li {
+          padding-bottom: 0 !important;
+        }
+        .nav-tabs.nav-justified > li > a {
+          margin-left: 2px ;
+          top: 1px;
+          border: none;
+        }
+        .nav-tabs.nav-justified > li:first-child > a {
+          margin-left: 0;
+        }
+        .nav-tabs.nav-justified > li > a:link {
+          background: #eee;
+        }
+    </style> 
+<div class="container">
+    <div class="row">
+        <div class="well">
+
+            <h3 style="text-align: center;">Olá NEUSA MARIA ABDALLA SHAABAN , bem vindo(a)</h3>
+
+        </div>
+    </div>
+    <div class="ibox-title">
+            <h4>KIM ABDALLA SHAABAN</h4>
+
+        </div>
+        <div class="ibox-title">
+            <h4>KIM ABDALLA SHAABAN</h4>
+
+        </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-3">
+            <span>
+                <img alt="image" class="img-circle"  src="img/profile.jpg" />   
+            </span>
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+            <div class="row ibox-title">
+                <div class="col-md-12">
+
+                    <h5><strong>FILIAL:</strong> Moóca</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>DIA DA SEMANA</strong> SEG/QUA</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>NÍVEL:</strong> FL2</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>TURMA:</strong> A</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>TOTAL DE AULAS:</strong> 32</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>NOME PROFESSOR(A):</strong> ANA MARIA</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>PRÓXIMA PROVA:</strong> 20/05/2017</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <div class="row ibox-title">
+                <div class="col-md-12">
+
+                    <h5><strong>FILIAL:</strong> Moóca</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>DIA DA SEMANA</strong> SEG/QUA</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>NÍVEL:</strong> FL2</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>TURMA:</strong> A</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>TOTAL DE AULAS:</strong> 32</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>NOME PROFESSOR(A):</strong> ANA MARIA</h5>
+                </div>
+
+                <div class="col-md-12">
+
+                    <h5><strong>PRÓXIMA PROVA:</strong> 20/05/2017</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row  m-t-lg">
+        <div class="col-md-12 col-sm-12 ">
+            <uib-tabset active="active" justified="true">
+                <uib-tab ng-repeat="tab in tabs" index="$index">
+                    <uib-tab-heading>
+                        <span class="color-black">{{tab.title}}</span><br>
+                        <i ng-class="tab.class" class="fa   fa-3x color-black"></i>
+                    </uib-tab-heading>
+                    <div  style="border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 10px" ng-include="tab.templateUrl"></div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</div>
