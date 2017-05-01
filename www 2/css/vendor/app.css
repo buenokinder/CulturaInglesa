@@ -3993,7 +3993,8 @@ code {
   background-color: #ffffff;
   border-color: #e7eaec;
   border-image: none;
- 
+  border-style: solid solid none;
+  border-width: 2px 0 0;
   color: inherit;
   margin-bottom: 0;
   padding: 15px 15px 7px;
@@ -4005,7 +4006,7 @@ code {
   padding: 15px 20px 20px 20px;
   border-color: #e7eaec;
   border-image: none;
-  
+  border-style: solid solid none;
   border-width: 1px 0;
 }
 .ibox-footer {
@@ -8627,38 +8628,11 @@ body.md-skin {
 
 .mail {
     font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: white;
+    background-color: #2f4050;
     font-size: 12px;
     color: #676a6c;
     overflow-x: hidden;
 }
 .culturaP {
     margin: 0 0 1px!important;
-}
-
-      a:focus {
-            outline: none;
-        }
-        .nav-tabs.nav-justified > li {
-          padding-bottom: 0 !important;
-        }
-        .nav-tabs.nav-justified > li > a {
-          margin-left: 2px ;
-          top: 1px;
-          border: none;
-        }
-        .nav-tabs.nav-justified > li:first-child > a {
-          margin-left: 0;
-        }
-        .nav-tabs.nav-justified > li > a:link {
-          background: #eee;
-        }
-
-
-
-        .nav-tabs > li > a {
-  margin-right: 2px;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
 }

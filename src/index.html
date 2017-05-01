@@ -1,125 +1,500 @@
 <!DOCTYPE html>
 <html lang="pt-BR" ng-app="culturaWebClient">
+
 <head>
-    <meta charset="utf-8">
-      <meta name="apple-touch-fullscreen" content="yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-    
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="description" content="Cultura Inglesa.">
-    <link rel="icon" href="cultura.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="cultura.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="touch-icon.png">
-    <title ng-bind="title"></title>
-<!--<meta http-equiv="Content-Security-Policy" coc
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="Cultura Inglesa.">
+	<link rel="icon" href="cultura.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="cultura.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="touch-icon.png">
+	<title ng-bind="title"></title>
+	<!--<meta http-equiv="Content-Security-Policy" coc
 ntent="default-src * ; img-src * filesystem: data:">-->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-  
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/vendor/app.css" type='text/css' media='all'>
-     <link rel="stylesheet" href="css/vendor/screenTesteHome.css" type='text/css' media='all'>
-      <link rel="stylesheet" href="css/vendor/ui-bootstrap-csp.css" type='text/css' media='all'>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type='text/css' media='all'>
-<link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css?v=1.5" type="text/css" media="all">
-    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" type='text/css' media='all'>
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/vendor/app.css" type='text/css' media='all'>
+	<link rel="stylesheet" href="css/vendor/screenTesteHome.css" type='text/css' media='all'>
+	<link rel="stylesheet" href="css/vendor/ui-bootstrap-csp.css" type='text/css' media='all'>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type='text/css' media='all'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" type='text/css' media='all'>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<header id="nav-top">
-			<section class="nav-top-container">
-			  <aside>          
-				<span class="menu">
-				  <label class="legend">Menu</label>
-				  <a id="menu-toggle" nohref="#menu"><span></span></a>
-				</span>
-			  </aside>
-			  <h1><a target="" title="" href="/wps/portal/Internet_New/home" class="logo">Cultura Inglesa</a></h1>
-			  <aside>
-			    <span class="search" style="width:59px;">
-				  
-				</span>
-			  </aside>  
-			</section>
-			
-		  </header>
-    <div  ui-view></div>
-    
-    <!--<footer id="footer">
-			  <nav>
-				<div class="container-right">
-					<ul>
-					  <li><a target="" title="" href="/wps/portal/Internet_New/p/acultura/trabalheconosco">Trabalhe Conosco </a></li>
-					  <li><a target="" title="" href="/wps/portal/Internet_New/faq">FAQ</a></li>
-					  <li><a target="" title="" href="/wps/portal/Internet_New/p/acultura/faleconosco">Contato</a></li>
-					  <li><a target="" title="" href="/wps/portal/Internet_New/sitemap">Site Map</a></li>
-					  <li><a target="" title="" href="/wps/portal/Internet_New/politicadeprivacidade">Política de Privacidade</a></li>                                       
-					</ul>
-			
-					<nav class="social">
-						<ul>
-							<li>
-								<a href="https://www.facebook.com/culturainglesasp" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/all.png" class="ico-facebook" style="width:36px; height:36px;">
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/culturainglesa" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/all.png" class="ico-twitter" style="width:36px; height:36px;">
-								</a>
-							</li>
-							<li>
-								<a href="https://instagram.com/culturainglesasp/" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/ico_instagram.png" class="ico-blog" style="width:36px; height:36px;">
-								</a>
-							</li>
-							<li>
-								<a href="http://www.youtube.com.br/culturainglesa" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/ico_youtube.png" class="ico-blog" style="width:36px; height:36px;">
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/cultura-inglesa" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/ico-linkedin.png" class="ico-blog" style="width:36px; height:36px;">
-								</a>
-							</li>
-							<li>
-								<a href="https://open.spotify.com/user/culturainglesafestival" target="_blank">
-									<img src="/wps/contenthandler/!ut/p/digest!oVEfVKm7a4W3ngrNURZO6g/war/Portal_Internet_ResponsiveStatic/themes/Portal8.0/css/images/ico/ico-spotify.png" class="ico-blog" style="width:36px; height:36px;">
-								</a>
-							</li>  
-							
-							<li class="back backtotop"><a nohref="#backtotop" class="ico-seta-backtotop" style="cursor: pointer;"></a></li>
-						</ul>
-					</nav>
+
+	<div class="container" ng-controller="culturaWebClient.controllers.MainController">
+
+		<div class="row">
+			<div class="well ">
+
+				<h3 style="text-align: center;" class="hidden-xs">Olá NEUSA MARIA ABDALLA SHAABAN , bem vindo(a)</h3>
+				<h5 style="text-align: center;" class="visible-xs">Olá NEUSA MARIA ABDALLA SHAABAN , bem vindo(a)</h5>
+			</div>
+		</div>
+
+		<div class="row">
+			<form>
+				<div class="form-group btn-group bootstrap-select">
+
+					<div class=" bootstrap-select">
+						<select class="form-control">
+                <option value="">Selecione um Aluno</option>
+                <option value="s">KIM ABDALLA SHAABAN</option>
+                <option value="m">KIM ABDALLA SHAABAN SEGUNDO</option>
+              
+            </select>
+					</div>
 				</div>
-			  </nav>
-			</footer>-->
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-3">
+				<span>
+                <img alt="image" class="img-circle"  src="img/profile.jpg" />   
+            </span>
+			</div>
+			<div class="boxes hidden-xs">
+				<div class="col-md-3 col-sm-4">
+					<div class="row ibox-title">
+						<div class="col-md-12">
+
+							<h5><strong>FILIAL:</strong> Moóca</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>DIA DA SEMANA</strong> SEG/QUA</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>NÍVEL:</strong> FL2</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>TURMA:</strong> A</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>TOTAL DE AULAS:</strong> 32</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>NOME PROFESSOR(A):</strong> ANA MARIA</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>PRÓXIMA PROVA:</strong> 20/05/2017</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="row ibox-title">
+						<div class="col-md-12">
+
+							<h5><strong>FILIAL:</strong> Moóca</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>DIA DA SEMANA</strong> SEG/QUA</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>NÍVEL:</strong> FL2</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>TURMA:</strong> A</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>TOTAL DE AULAS:</strong> 32</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>NOME PROFESSOR(A):</strong> ANA MARIA</h5>
+						</div>
+
+						<div class="col-md-12">
+
+							<h5><strong>PRÓXIMA PROVA:</strong> 20/05/2017</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 
-    <script src="js/index.js"></script>
+		<div class="row  m-t-lg">
+			<div class="col-md-12 col-sm-12  ">
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="bower_components/angular-md5/angular-md5.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/angular-moment/angular-moment.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
-    <script src="bower_components/angular-bootstrap-contextmenu/contextMenu.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+				<ul class="nav nav-tabs  nav-justified hidden-xs">
+					<li class="active"><a data-toggle="tab" href="#home"><span class="color-black hidden-xs">DADOS FINANCEIRO</span><br>
+							<i ng-class="tab.class" class="fa  fa-dollar fa-2x color-black"></i></a></li>
+					<li>
+						<a data-toggle="tab" href="#menu1">
+							<span class="color-black hidden-xs">DADOS ACADÊMICOS</span><br>
+							<i ng-class="tab.class" class="fa fa-mortar-board  fa-2x color-black"></i>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#menu2">
+							<span class="color-black hidden-xs">ATENDIMENTO</span><br>
+							<i ng-class="tab.class" class="fa fa-envelope-o  fa-2x color-black"></i>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#menu3">
+							<span class="color-black hidden-xs">FAQ</span><br>
+							<i ng-class="tab.class" class="fa fa-question-circle-o fa-2x color-black"></i>
+						</a>
+					</li>
+				</ul>
 
-    <script src="main.js?v=10011"></script>
+				<ul class="nav nav-tabs  visible-xs">
+					<li class="active"><a data-toggle="tab" href="#home"><i ng-class="tab.class" class="fa  fa-dollar fa-2x color-black"></i></a></li>
+					<li><a data-toggle="tab" href="#menu1"><i ng-class="tab.class" class="fa fa-mortar-board  fa-2x color-black"></i></a></li>
+					<li><a data-toggle="tab" href="#menu2"><i ng-class="tab.class" class="fa fa-envelope-o  fa-2x color-black"></i></a></li>
+					<li>
+						<a data-toggle="tab" href="#menu3"> <i ng-class="tab.class" class="fa fa-question-circle-o fa-2x color-black"></i></a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<div style="border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 0px">
+
+							<div class="tabColor">
+
+								<div class="col-lg-12  m-t-lg">
+									<h4 class="list-group-item-heading">Atenção</h4>
+									<p class="list-group-item-text">
+										A parcela número 00000002 no nível FL2 no valor de R$ 350,00 da Filial Mooca irá vencer dia 31/01/2017. Até o momento não
+										acusamos o recebimento da sua parcela de número 000000001 do nível FL2 no valor de R$ 350,00 da Filial Mooca vencida
+										dia 20/01/2017.
+									</p>
+								</div>
+
+
+
+								<div class="ibox float-e-margins m-t-lg">
+									<div class="ibox-title">
+										<h5>DOCUMENTAÇÃO</h5>
+
+									</div>
+
+									<div class="mail-box mail">
+
+										<table class="table table-hover table-mail">
+											<tbody>
+
+												<tr class="read">
+
+													<td class="mail-ontact">
+														<p class="culturaP"><b>Prazo/Condição</b></p>
+														<i class="fa fa-file-pdf-o fa-3x color-red" aria-hidden="true"></i>
+
+													</td>
+													<td class="mail-subject">
+														<p class="culturaP"><b>Boleto: </b></p>
+														<i class="fa fa-barcode fa-3x" aria-hidden="true"></i>
+													</td>
+
+
+											</tbody>
+										</table>
+
+
+									</div>
+
+
+								</div>
+
+								<div class="ibox float-e-margins m-t-lg">
+									<div class="ibox-title">
+										<h5>CURSO ATUAL FL2 </h5>
+
+									</div>
+
+									<div class="mail-box mail">
+
+										<table class="table table-hover table-mail">
+											<tbody>
+
+												<tr class="read">
+
+													<td class="mail-ontact">120392131231 <span class="label label-warning pull-right">Aberto</span> </td>
+													<td class="mail-subject">
+														<p class="culturaP"><b>Vencimento: </b></p>
+														<p class="culturaP"><span>12/09/1980</span></p>
+														<p class="culturaP  visible-xs"><b>Pago:</b> </p>
+														<p class="culturaP  visible-xs"><span>R$ 350,00 - 12/09</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Parcela: </b> </p>
+
+														<p class="culturaP "><span>1/3</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Data Pagamento: </b> </p>
+
+														<p class="culturaP "><span>12/09/1980</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Valor a Receber: </b> </p>
+														<p class="culturaP "><span>R$ 350,00</span></p>
+													</td>
+													<td>
+														<p class="culturaP  hidden-xs"><b>Pago:</b> </p>
+														<p class="culturaP  hidden-xs"><span>R$ 350,00 - 12/09</span></p>
+													</td>
+													<td class=""><i class="fa fa-barcode fa-3x" aria-hidden="true"></i></td>
+												</tr>
+												<tr class="unread">
+
+													<td class="mail-ontact">120392131231 <span class="label label-info pull-right">Pago</span> </td>
+													<td class="mail-subject">
+														<p class="culturaP"><b>Vencimento: </b></p>
+														<p class="culturaP"><span>12/09/1980</span></p>
+														<p class="culturaP  visible-xs"><b>Pago:</b> </p>
+														<p class="culturaP  visible-xs"><span>R$ 350,00 - 12/09</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Parcela: </b> </p>
+
+														<p class="culturaP "><span>1/3</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Data Pagamento: </b> </p>
+
+														<p class="culturaP "><span>12/09/1980</span></p>
+													</td>
+													<td class="hidden-xs">
+														<p class="culturaP hidden-xs"><b>Valor a Receber: </b> </p>
+														<p class="culturaP "><span>R$ 350,00</span></p>
+													</td>
+													<td>
+														<p class="culturaP  hidden-xs"><b>Pago:</b> </p>
+														<p class="culturaP  hidden-xs"><span>R$ 350,00 - 12/09</span></p>
+													</td>
+													<td class=""><i class="fa fa-barcode fa-3x" aria-hidden="true"></i></td>
+												</tr>
+											</tbody>
+										</table>
+
+
+									</div>
+
+
+								</div>
+
+
+
+								<!-- Cursos  -->
+
+
+								<!-- Cursos  Ateriores-->
+
+								<div class="ibox float-e-margins m-t-lg">
+									<div class="ibox-title">
+										<h5>CURSOS ANTERIORES</h5>
+
+									</div>
+
+									<div class="mail-box mail">
+
+										<table class="table table-hover table-mail">
+											<tbody>
+
+												<tr class="read">
+
+													<td class="mail-ontact"><b>Ano:</b> 2016<span class="label label-info pull-right">Quitada</span> </td>
+													<td class="mail-subject">
+														<p class="culturaP"><b>Curso: </b></p>
+
+													</td>
+
+													<td>
+														<p class="culturaP "><b>Carta Quitação:</b> </p>
+														<p class="culturaP "><i class="fa fa-file-pdf-o fa-3x  color-red" aria-hidden="true"></i></p>
+													</td>
+
+												</tr>
+												<tr class="unread">
+
+													<td class="mail-ontact"><b>Ano:</b> 2016<span class="label label-info pull-right">Quitada</span> </td>
+													<td class="mail-subject">
+														<p class="culturaP"><b>Curso: </b></p>
+
+													</td>
+
+													<td>
+														<p class="culturaP "><b>Carta Quitação:</b> </p>
+														<p class="culturaP "><i class="fa fa-file-pdf-o fa-3x color-red" aria-hidden="true"></i></p>
+													</td>
+
+												</tr>
+											</tbody>
+										</table>
+
+
+									</div>
+
+
+								</div>
+
+
+
+
+
+
+							</div>
+
+
+						</div>
+
+					</div>
+					<div id="menu1" class="tab-pane fade">
+
+						<h3>Menu 1</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<h3>Menu 2</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					</div>
+					<div id="menu3" class="tab-pane fade">
+						<div style="border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 15px">
+						
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">DÚVIDAS ACADÊMICAS</a>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<h4 class="list-group-item-heading">O PROFESSOR FALA SÓ INGLÊS NA CLASSE?</h4>
+											<p class="list-group-item-text">
+												Sim, esta é a proposta. A Cultura estimula a comunicação em inglês em todos os níveis para que, desde o início, o aluno aprenda
+												a lidar de uma forma natural com o idioma. Para facilitar a compreensão deste novo idioma, o professor faz uso
+												de situações contextualizadas e vocabulário adequado ao estágio em questão. Em pouco tempo e naturalmente os
+												alunos adquirem confiança e também passam a se comunicar só em inglês.
+											</p>
+											<br>
+											<h4 class="list-group-item-heading">QUANDO COMEÇAM AS AULAS?</h4>
+											<p class="list-group-item-text">
+												O início das aulas varia de acordo com a sua opção de turma. Verifique as datas em nosso calendário. Os preços, locais e
+												datas de inscrição dos cursos e exames podem ser obtidos em qualquer unidade da Cultura Inglesa.
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">DÚVIDAS FINANCEIRAS</a>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<h4 class="list-group-item-heading">Atenção</h4>
+											<p class="list-group-item-text">
+												A parcela número 00000002 no nível FL2 no valor de R$ 350,00 da Filial Mooca irá vencer dia 31/01/2017. Até o momento não
+												acusamos o recebimento da sua parcela de número 000000001 do nível FL2 no valor de R$ 350,00 da Filial Mooca
+												vencida dia 20/01/2017.
+											</p>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<!--
+ class: "fa-dollar",
+        title: "DADOS FINANCEIRO",
+        templateUrl: 'app/views/financeiro/index.html'
+    },
+    {
+        class: 'fa-mortar-board',
+        title: "DADOS ACADÊMICOS",
+             templateUrl: 'app/views/academico/index.html'
+    },
+    {
+        class: 'fa-envelope-o',
+        title: "ATENDIMENTO",
+             templateUrl: 'app/views/atendimento/index.html'
+    },
+    {
+        class: 'fa-question-circle-o',
+        title: "FAQ",
+             templateUrl: 'app/views/faq/index.html'
+    }
+]-->
+			<!--
+				<div class="col-xs-12 hidden-xs">
+					<uib-tabset active="active" justified="false">
+						<uib-tab ng-repeat="tab in tabs" index="$index">
+							<uib-tab-heading>
+								<span style="text-align: center;"> <i ng-class="tab.class" class="fa   fa-2x color-black"></i></span>
+
+							</uib-tab-heading>
+							<div style="border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 0px" ng-include="tab.templateUrl"></div>
+						</uib-tab>
+					</uib-tabset>
+				</div>-->
+		</div>
+	</div>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="bower_components/angular-md5/angular-md5.min.js"></script>
+	<script src="bower_components/moment/min/moment.min.js"></script>
+	<script src="bower_components/angular-moment/angular-moment.min.js"></script>
+
+	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+	<script src="bower_components/angular-bootstrap-contextmenu/contextMenu.js"></script>
+	<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+	<script src="main.js?v=10011"></script>
 
 </body>
+
 </html>

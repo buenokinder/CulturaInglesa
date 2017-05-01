@@ -43,9 +43,7 @@ module culturaWebClient {
 
     culturaclient.config(($stateProvider: any,$urlRouterProvider: any, $httpProvider: ng.IHttpProvider, cfpLoadingBarProvider) => {
         
-        culturaWebClient.init.bootstrapRoutes($stateProvider);
-
-        cfpLoadingBarProvider.includeSpinner = false;
+        
 
     });
 
